@@ -11,9 +11,10 @@ class App extends Component {
 
 	
   render() {
+  	console.log(this.state.count);
     return (
       <div>
-        <span className="value">0</span>
+        <span className="value">{this.state.count}</span>
         <button id="inc" onClick={this.addValue.bind(this)}>Incrementa</button>
       </div>
     );
